@@ -1,0 +1,33 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: lightgrey;
+}
+
+.header-top{
+    background-color: rgb(206, 206, 130);
+    text-align: center;
+    border-bottom: rgb(165, 123, 44) solid 5px;
+    
+}
+#petCount{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+#petNames{
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size: large;
+}
+img{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 20px;
+    width: 300px;
+}
