@@ -19,15 +19,22 @@ body{
     font-size: 30px;
 }
 #petNames{
+    display: block;
     text-align: center;
-    padding-top: 10px;
-    margin-top: 10px;
+    line-height: 2;
     font-size: large;
+    margin-bottom: 50px;
 }
 img{
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    display: block;
     border-radius: 20px;
     width: 300px;
+    margin-top: 20px;
+}
+
+.pet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

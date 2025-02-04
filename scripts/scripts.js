@@ -4,7 +4,7 @@ let pet1 = {
     Gender: "Male",
     Service: "",
     Breed: "Chihuahua",
-    image: `<img src="Images/Chihuahua.jpg"></img>`
+    image: "Images/Chihuahua.jpg"
 }
 let pet2 = {
     name: "Mo",
@@ -12,7 +12,7 @@ let pet2 = {
     Gender: "Male",
     Service:"",
     Breed: "Pitbull",
-    image: `<img src="Images/Pitbull.jpg"></img>`
+    image: "Images/Pitbull.jpg"
 }
 let pet3 = {
     name: "Parz",
@@ -20,7 +20,7 @@ let pet3 = {
     Gender: "Male",
     Service: "",
     Breed: "Mancoon",
-    image: `<img src="Images/Mancoon.jpg"></img>`
+    image: "Images/Mancoon.jpg"
 }
 
 let petlist = [pet1, pet2, pet3]
@@ -33,7 +33,12 @@ function getPetNames(){
     for(i=0; i<petlist.length; i++){
         console.log(petlist[i].name);
         
-        p.innerHTML += `<div>${petlist[i].name} ${petlist[i].image}</div>`
+        p.innerHTML += `
+        <div class="pet">
+            <p>${petlist[i].name}</p>
+            <img src="${petlist[i].image}">
+        
+        </div>`
         
     }
 }
