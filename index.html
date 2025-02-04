@@ -9,13 +9,51 @@
 <body>
     <header class="header-top">
         <h1>Pet Salon</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="register.html">Register</a>
+        </nav>
     </header>
     <main>
-        <p id="petCount"></p>
-        
-    <div id="petNames"></div>
+        <div>
+            <h2>Register a new pet</h2>
+            <div class="form-container">
+                <div class="form-control">
+                    <label>Name:</label>
+                    <input type="text" id="txtName">
+                </div>
+                <div class="form-control">
+                    <label>Age:</label>
+                    <input type="text" id="txtAge">
+                </div>
+                <div class="form-control">
+                    <label>Gender:</label>
+                    <input type="text" id="txtGender">
+                </div>
+                <div class="form-control">
+                    <label>Breed:</label>
+                    <input type="text" id="txtBreed">
+                </div>
+                <div class="form-control">
+                    <label>Service:</label>
+                    <input type="text" id="txtService">
+                </div>
+                <div class="form-control">
+                    <label>Type of animal:</label>
+                    <input type="text" id="txtType">
+                </div>
+                <div>
+                    <button onclick="register()">Register</button>
+                </div>
+            </div>
+        </div>
     </main>
-
+    <section>
+        <h2>Registered Pets</h2>
+        <p id="petsCount"></p>
+        <div id="petNames"></div>
+    </section>
     
 
     <script src="/scripts/scripts.js"></script>
