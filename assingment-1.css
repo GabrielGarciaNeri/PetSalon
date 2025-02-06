@@ -6,7 +6,9 @@
 body{
     background-color: lightgrey;
 }
-
+a{
+    text-decoration: none;
+}
 .header-top{
     background-color: rgb(206, 206, 130);
     text-align: center;
@@ -37,4 +39,22 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.form-container{
+    background-color: lightgray;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    height: 500px;
+}
+.form-control{
+    display: flex;
+    width: 80%;
+    
 }
