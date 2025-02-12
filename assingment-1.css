@@ -45,7 +45,7 @@ img{
     align-items: center;
 }
 .form-container{
-    background-color: lightgray;
+    background-image:url(Images/paws.jpg);
     width: 400px;
     display: flex;
     flex-direction: column;
@@ -57,6 +57,14 @@ img{
     margin-right: auto;
     margin-top: 20px;
     height: 800px;
+}
+.form-container h2{
+    background-color: black;
+    color: antiquewhite;
+    border-radius: 10px;
+    width: 70%;
+    text-align: center;
+    margin-top: 20px;
 }
 .form-control{
     display: flex;
@@ -74,6 +82,10 @@ img{
 .card{
     margin-right: 20px;
     margin-top: 40px;
+    height: 400px !important;
+}
+.carousel-item img{
+    height: 200px !important;
 }
 .hide{
     display: none;
