@@ -9,6 +9,10 @@ body{
 a{
     text-decoration: none;
 }
+.error{
+    background-color: rgb(248, 182, 182) !important;
+    border: solid red 3px;
+}
 .header-top{
     background-color: rgb(206, 206, 130);
     text-align: center;
@@ -42,7 +46,7 @@ img{
 }
 .form-container{
     background-color: lightgray;
-    width: 300px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -52,12 +56,13 @@ img{
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    height: 500px;
+    height: 800px;
 }
 .form-control{
     display: flex;
-    width: 80%;
-    
+}
+.form-select{
+    width: 220px !important;
 }
 .animal-cards{
     display: flex;
@@ -69,4 +74,7 @@ img{
 .card{
     margin-right: 20px;
     margin-top: 40px;
+}
+.hide{
+    display: none;
 }

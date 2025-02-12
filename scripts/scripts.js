@@ -33,39 +33,52 @@ function register(){
     console.log(newPet);
     if(isValid(newPet)){
         petlist.push(newPet)
-        displayPet();
+        displayTable();
+        displayPetInfo();
+        showAlert("New pet was added","success")
         clearInputs();
-    }    
+    }else{
+        showAlert("Please, add all the information","warning");
+    }
 }
 
 //validations
 function isValid(pet){
     let validation = true;
+
+    // reset style
+    inputName.classList.remove("error");
+    inputAge.classList.remove("error");
+    inputGender.classList.remove("error");
+    inputBreed.classList.remove("error");
+    document.getElementById("alert-error").classList.add("hide")
+
+
     if(pet.name ===""){
         validation = false;
-        alert("The name of the pet should not be empty"); 
+        inputName.classList.add("error")
     }
     if(typeof(pet.name) ==="number"){
         validation = false;
-        alert("The name of the pet should not be a number"); 
+        inputAge.classList.add("error")
     }
     if(pet.age ===""){
         validation = false;
-        alert("The age of the pet should not be empty"); 
+        inputName.classList.add("error")
     }
     if(typeof(pet.age) ==="string"){
         validation = false;
-        alert("The age of the pet should not be text"); 
+        inputAge.classList.add("error")
     }else{
 
     }
     if(pet.gender ===""){
         validation = false;
-        alert("The gender of the pet should not be empty"); 
+        inputGender.classList.add("error")
     }
     if(pet.breed ===""){
         validation = false;
-        alert("The breed of the pet should not be empty"); 
+        inputBreed.classList.add("error")
     }
     return validation
 }
@@ -77,13 +90,41 @@ function clearInputs(){
     inputBreed.value = "";
 }
 
+function deletePet(petId){
+    //remove from html
+    document.getElementById(petId).remove();
+
+    //remove from the array splice()
+    petlist.splice(petId,1);
+
+    //re-display the table
+    displayTable();
+    displayPetInfo();
+
+    //show the notification
+    showAlert("The Pet was deleted", "danger");
+}
+
+function showAlert(msg,type){
+    let alertContainer = document.getElementById("alertContainer")
+    alertContainer.innerHTML = `
+    <div id="alert-error" class="alert alert-${type}" role="alert">
+        ${msg}
+    </div>
+    `
+    setTimeout(()=>{
+        document.getElementById("alert-error").remove();
+    },3000) //1000 = 1 second
+}
 
 function init(){
     let Pet1 = new Pet("Leo",80, "male","Chihuahua","Cleaning","Dog");
     let Pet2 = new Pet("May",40, "female","Pitbull","Cleaning","Dog");
     let Pet3 = new Pet("Tay",50, "male","Mancoon","Cleaning","Cat");
     petlist.push(Pet1,Pet2,Pet3);
-    displayPet();
+    displayTable();
+    displayPetInfo();
+    document.getElementById("alert-error").classList.add("hide")
 }
 
 window.onload=init;

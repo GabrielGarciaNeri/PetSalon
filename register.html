@@ -28,33 +28,39 @@
             
             <div class="form-container">
                 <h2>Register a new pet</h2>
-                <div class="form-control">
+                <div id="alertContainer">
+
+                </div>
+                <div id="alert-error" class="alert alert-danger hide" role="alert">
+                    Please add all information required
+                </div>
+                <div class="mb-3">
                     <label>Name:</label>
-                    <input type="text" id="txtName">
+                    <input  class="form-control" type="text" id="txtName">
                 </div>
-                <div class="form-control">
+                <div class="mb-3">
                     <label>Age:</label>
-                    <input type="number" id="txtAge" min="0">
+                    <input class="form-control" type="number" id="txtAge" min="0">
                 </div>
-                <div class="form-control">
+                <div class="mb-3">
                     <label>Gender:</label>
-                    <input type="text" id="txtGender">
+                    <input class="form-control" type="text" id="txtGender">
                 </div>
-                <div class="form-control">
+                <div class="mb-3">
                     <label>Breed:</label>
-                    <input type="text" id="txtBreed">
+                    <input class="form-control" type="text" id="txtBreed">
                 </div>
-                <div class="form-control">
+                <div class="mb-3">
                     <label for="txtService">Service:</label>
-                    <select id="txtService">
+                    <select class="form-select" id="txtService">
                         <option value="cleaning">cleaning</option>
                         <option value="cut">cut</option>
                         <option value="babysit">babysit</option>
                     </select>
                 </div>
-                <div class="form-control">
+                <div class="mb-3">
                     <label for="txtType">Type of animal:</label>
-                    <select id="txtType">
+                    <select class="form-select" id="txtType">
                         <option value="cat">Cat</option>
                         <option value="Dog">Dog</option>
                         <option value="Lizard">Lizard</option>
@@ -66,10 +72,25 @@
             </div>
         </div>
     </main>
-    <section>
+    <section class="container">
         <h2>Registered Pets</h2>
         <p id="petsCount"></p>
         <div id="petNames"></div>
+
+        <table class="table">
+            <thead>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Breed</th>
+                <th>Service</th>
+                <th>Type</th>
+                <th>Actions</th>
+            </thead>
+            <tbody id="petRows">
+
+            </tbody>
+        </table>
     </section>
 
     <script src="/scripts/scripts.js"></script>
