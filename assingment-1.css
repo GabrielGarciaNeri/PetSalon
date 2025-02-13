@@ -46,7 +46,8 @@ img{
     align-items: center;
 }
 .form-container{
-    background-image:url(Images/paws.jpg);
+    background-image:url(Images/paws\ 5.jpg);
+    background-size: contain;
     width: 400px;
     display: flex;
     flex-direction: column;
