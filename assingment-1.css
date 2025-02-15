@@ -8,17 +8,35 @@ body{
 }
 a{
     text-decoration: none;
-    color: black !important;
+    color: pink!important;
 }
 .error{
     background-color: rgb(248, 182, 182) !important;
     border: solid red 3px;
 }
+.title{
+    display: flex;
+    justify-content: center;
+    color: pink;
+}
+.title label{
+    font-size: 30px;
+    color: pink;
+}
 .header-top{
-    background-color: rgb(47, 176, 235);
+    background-color: black;
     text-align: center;
-    border-bottom: rgb(17, 17, 16) solid 5px;
-    
+    border-bottom: pink solid 5px;
+}
+.sub-header{
+    text-align: center;
+    margin-top: 20px;
+    width: 40%;
+    background-color: pink;
+    border: solid 3px black;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #petCount{
     padding-top: 10px;
@@ -34,7 +52,7 @@ a{
 }
 img{
     display: block;
-    border-radius: 20px;
+    border-radius: 11px;
     width: 300px;
     margin-top: 20px;
 }
@@ -62,7 +80,29 @@ img{
 }
 .form-container h2{
     background-color: black;
-    color: antiquewhite;
+    color: pink;
+    border-radius: 10px;
+    width: 70%;
+    text-align: center;
+    margin-top: 20px;
+}
+.form-container2{
+    background-color: black;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    border: solid black 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    height: 600px;
+}
+.form-container2 h2{
+    color: pink;
+    border: pink solid 3px;
     border-radius: 10px;
     width: 70%;
     text-align: center;
@@ -74,9 +114,18 @@ img{
 .form-select{
     width: 220px !important;
 }
+.mb-3 label{
+    font-weight: bold;
+    font-size: 20px !important;
+    border: 2px solid pink;
+    border-radius: 10px;
+    color: pink;
+    background-color: black;
+}
 .animal-cards{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -86,18 +135,20 @@ img{
     margin-top: 40px;
     height: 420px !important;
     border-radius: 20px !important;
-    border: solid 3px black !important;
+    border: solid 7px pink !important;
+    background-color: black !important;
 }
 .card-title{
     text-decoration: underline;
     font-weight: bold;
     margin-top: -10px;
     padding-bottom: 22px;
+    color: pink !important;
 }
 .card-text{
     margin-top: -20px;
     padding-top: 3px;
-    color: grey;
+    color: white;
 }
 .carousel-item img{
     height: 200px !important;
@@ -105,4 +156,21 @@ img{
 }
 .hide{
     display: none;
+}
+@media(max-width:768px){
+    .animal-cards{
+        display: block;
+    }
+}
+footer{
+    background-color: black;
+    color: pink;
+    text-align: center;
+    margin-top: 20px;
+}
+footer label{
+    font-size: 25px;
+}
+textarea{
+    max-height: 120px;
 }

@@ -11,6 +11,7 @@ function validService(service){
         isValidTitle=false;
         $("#txtTitle").css("border","1px solid red");
         $(`#titleRequirementText`).show().css("color","red")
+        $("")
     }else{
         $("#txtTitle").css("border","1px solid black");
         $(`#titleRequirementText`).hide()

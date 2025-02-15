@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assingment-1.css">
+    <script src="https://kit.fontawesome.com/337be747ec.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
     <header class="header-top">
-        <h1>Pet Salon</h1>
+        <div class="title">
+            <label><i class="fa-solid fa-paw"></i></label>
+            <h1>Pet Salon</h1>
+            <label><i class="fa-solid fa-paw"></i></label>
+        </div>
         <ul class="nav nav-tabs">
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
+                <a class="nav-link disabled" aria-disabled="true" href="services.html">Services</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="register.html">Register</a>
@@ -26,7 +31,10 @@
         </ul>
     </header>
     <main>
-        <h2>Newest Member to your Home</h2>
+        <div class="sub-header">
+            <h2>Newest Member to your Home!</h2>
+        </div>
+        
         <div class="animal-cards">
             <div class="card" style="width: 18rem;">
                 <div id="carouselExampleIndicators" class="carousel slide">
@@ -56,7 +64,7 @@
                     </button>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Goofy</h5>
+                    <h5 class="card-title">Goofy🐶 </h5>
                     <p class="card-text">3 mo Old</p>
                     <p class="card-text">I am not barking at nothing- I'm protecting us from invisible danger!</p>
                     <a href="contact.html" class="btn btn-primary">Contact Us</a>
@@ -90,7 +98,7 @@
                     </button>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Firulais</h5>
+                    <h5 class="card-title">Firulais🐶 </h5>
                     <p class="card-text">2 mo Old</p>
                     <p class="card-text">I licked it, so now its mine. Thats the rule, right?</p>
                     <a href="contact.html" class="btn btn-primary">Contact Us</a>
@@ -124,7 +132,7 @@
                     </button>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Mickey</h5>
+                    <h5 class="card-title">Mickey🙀</h5>
                     <p class="card-text">3 mo Old</p>
                     <p class="card-text">I didn't knock that over... gravity did. Blame science, not me!</p>
                     <a href="contact.html" class="btn btn-primary">Contact Us</a>
@@ -160,7 +168,7 @@
                     </button>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Dalm</h5>
+                    <h5 class="card-title">Dalm🐶</h5>
                     <p class="card-text">2 mo Old</p>
                     <p class="card-text">I didn't chew your shoe... it attacked me first!</p>
                     <a href="contact.html" class="btn btn-primary">Contact Us</a>
@@ -194,7 +202,7 @@
                     </button>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Flirty</h5>
+                    <h5 class="card-title">Flirty🦎</h5>
                     <p class="card-text">6 mo Old</p>
                     <p class="card-text">I may be small but I own this entire tank... and your heart!</p>
                     <a href="contact.html" class="btn btn-primary">Contact Us</a>
@@ -228,7 +236,7 @@
                     </button>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Hammy</h5>
+                    <h5 class="card-title">Hammy🐹</h5>
                     <p class="card-text">5 mo Old</p>
                     <p class="card-text">I wasn't running at 3 AM to annoy you- I was training for the Hamster Olympics!</p>
                     <a href="contact.html" class="btn btn-primary">Contact Us</a>
@@ -264,7 +272,7 @@
                     </button>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Buck</h5>
+                    <h5 class="card-title">Buck🐶</h5>
                     <p class="card-text">2 mo Old</p>
                     <p class="card-text">I was not scratching the couch... I was redecorating it!</p>
                     <a href="contact.html" class="btn btn-primary">Contact Us</a>
@@ -298,7 +306,7 @@
                     </button>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Bee</h5>
+                    <h5 class="card-title">Bee🐶</h5>
                     <p class="card-text">3 mo Old</p>
                     <p class="card-text">You said "sit" but I heard "run" -honest mistake!</p>
                     <a href="contact.html" class="btn btn-primary">Contact Us</a>
@@ -332,7 +340,7 @@
                     </button>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Whitey</h5>
+                    <h5 class="card-title">Whitey🙀</h5>
                     <p class="card-text">3 mo Old</p>
                     <p class="card-text">Feed me now, human... or face the consequences of my tiny, but mighty, wrath!</p>
                     <a href="contact.html" class="btn btn-primary">Contact Us</a>
@@ -344,7 +352,15 @@
         <p id="petsCount"></p>
         <div id="petNames"></div>
     </section>
-    
+    <footer>
+        <h1>Find Us</h1>
+        <p>📍located: 2222 North Pole dr</p>
+        <p>📞Phone: (222)-333-4444</p>
+        <p>📧 Mail: SouthPole@gmail.com</p>
+        <label><i class="fa-brands fa-instagram"></i></label>
+        <label><i class="fa-brands fa-facebook"></i></label>
+        <label><i class="fa-brands fa-twitter"></i></label>
+    </footer>
 
     <script src="/scripts/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

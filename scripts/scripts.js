@@ -90,6 +90,7 @@ function clearInputs(){
     inputBreed.value = "";
 }
 
+
 function deletePet(petId){
     //remove from html
     document.getElementById(petId).remove();
@@ -126,6 +127,7 @@ function init(){
     displayPetInfo();
     document.getElementById("alert-error").classList.add("hide")
 }
+
 
 window.onload=init;
 
