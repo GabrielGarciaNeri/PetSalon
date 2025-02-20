@@ -117,7 +117,15 @@ function showAlert(msg,type){
         document.getElementById("alert-error").remove();
     },3000) //1000 = 1 second
 }
-
+function getServices(){
+    let list = read(); //read the srvices from LS
+    let option=""
+    for(i=0; i<list.length; i++){
+        let service = list[i];
+        option += `<option value="${service.title}">${service.title} - $ ${service.price}</option>`
+    }
+    inputService.innerHTML = option
+}
 function init(){
     let Pet1 = new Pet("Leo",80, "male","Chihuahua","Cleaning","Dog");
     let Pet2 = new Pet("May",40, "female","Pitbull","Cleaning","Dog");
@@ -125,6 +133,7 @@ function init(){
     petlist.push(Pet1,Pet2,Pet3);
     displayTable();
     displayPetInfo();
+    getServices();
     document.getElementById("alert-error").classList.add("hide")
 }
 
